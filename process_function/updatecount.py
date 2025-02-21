@@ -10,7 +10,7 @@ dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('rekognitionresults')
 
 
-custom_model_arn = #insert-your-model-arn-here
+custom_model_arn = #insert-your-rekognition-arn-here
 
 def process_handler(event, context):
     try:
