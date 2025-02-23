@@ -77,7 +77,7 @@ resource "aws_iam_policy" "lambda_s3_read" {
       {
         Action   = ["s3:GetObject"]
         Effect   = "Allow"
-        Resource = #insert-your-bucket-resource-here
+        Resource = "arn:aws:s3:::my-images-bucketz/*"
       },
     ]
   })
@@ -85,7 +85,7 @@ resource "aws_iam_policy" "lambda_s3_read" {
 
 resource "aws_iam_policy" "rekognitiondetectlabel" {
   name        = "RekognitionDetectLabel"
-  description = "policy to allow lambda to use rekognition"
+  description = "policiy to allow lambda to use rekognition"
   policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
@@ -108,7 +108,7 @@ resource "aws_iam_policy" "writetodynamodb" {
       {
         Action   = "dynamodb:PutItem"
         Effect   = "Allow"
-        Resource = #arn-for-your-dynamodb-here
+        Resource = "arn:aws:dynamodb:us-east-1:463470969308:table/rekognitionresults"
       },
     ]
   })
