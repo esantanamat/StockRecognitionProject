@@ -10,7 +10,7 @@ dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('rekognitionresults')
 
 
-custom_model_arn = 'arn:aws:rekognition:us-east-1:463470969308:project/aisles-item-recognition/version/aisles-item-recognition.2025-02-20T17.40.42/1740091244468'
+custom_model_arn = #your-rekognition-custom-label-arn-here
 
 def process_handler(event, context):
     try:
