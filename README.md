@@ -34,5 +34,5 @@ terraform apply
 
 ## Future Enhancements
 
-- Train a **custom Rekognition model** for better accuracy
-- Build a **frontend dashboard** for real-time stock monitoring
+- Improve **Rekognition Custom Labels model** for better accuracy
+- Build a **frontend dashboard** for stock monitoring
