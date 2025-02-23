@@ -20,7 +20,7 @@ Note: You will need to train your own **AWS Rekognition Custom Labels model**
 2. ☁️ **Stored in Amazon S3**
 3. 🧠 **AWS Rekognition detects items**
 4. 🔄 **Lambda updates DynamoDB with stock levels**
-![Architecture Diagram](./architecture-diagram.png)
+![Architecture Diagram](./architecture_diagram.png)
 
 ## Setup & Deployment
 
